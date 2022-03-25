@@ -1,4 +1,4 @@
-package com.lernApp.lernapp.security.services;
+package com.lernApp.LoginAPI.security.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -7,8 +7,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.lernApp.lernapp.models.User;
-import com.lernApp.lernapp.repository.UserRepository;
+import com.lernApp.LoginAPI.models.User;
+import com.lernApp.LoginAPI.repository.UserRepository;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {

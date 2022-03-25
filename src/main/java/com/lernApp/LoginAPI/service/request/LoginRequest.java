@@ -1,4 +1,4 @@
-package com.lernApp.lernapp.service.request;
+package com.lernApp.LoginAPI.service.request;
 
 import javax.validation.constraints.NotBlank;
 

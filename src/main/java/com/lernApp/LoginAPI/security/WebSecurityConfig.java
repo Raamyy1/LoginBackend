@@ -1,8 +1,9 @@
-package com.lernApp.lernapp.security;
+package com.lernApp.LoginAPI.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -14,10 +15,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.lernApp.lernapp.security.jwt.AuthEntryPointJwt;
-import com.lernApp.lernapp.security.jwt.AuthTokenFilter;
-import com.lernApp.lernapp.security.services.UserDetailsServiceImpl;
-import com.lernApp.lernapp.security.services.UserDetailsImpl;
+import com.lernApp.LoginAPI.security.jwt.AuthEntryPointJwt;
+import com.lernApp.LoginAPI.security.jwt.AuthTokenFilter;
+import com.lernApp.LoginAPI.security.services.UserDetailsServiceImpl;
 
 @Configuration
 @EnableWebSecurity
@@ -59,10 +59,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.cors().and().csrf().disable()
                 .exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
-                .authorizeRequests().antMatchers("/api/auth/**").permitAll()
+                .authorizeRequests().antMatchers("/api/answer/**").permitAll()
+                .antMatchers("/api/auth/**").permitAll()
                 .antMatchers("/api/test/**").permitAll()
                 .anyRequest().authenticated();
 
-        http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
     }
 }

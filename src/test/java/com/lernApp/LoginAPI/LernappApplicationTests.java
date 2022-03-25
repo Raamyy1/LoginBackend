@@ -1,4 +1,4 @@
-package com.lernApp.lernapp;
+package com.lernApp.LoginAPI;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

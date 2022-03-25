@@ -1,4 +1,4 @@
-package com.lernApp.lernapp.controllers;
+package com.lernApp.LoginAPI.controllers;
 
 
 import java.util.HashSet;
@@ -21,17 +21,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.lernApp.lernapp.models.ERole;
-import com.lernApp.lernapp.models.Role;
-import com.lernApp.lernapp.models.User;
-import com.lernApp.lernapp.service.request.LoginRequest;
-import com.lernApp.lernapp.service.request.SignupRequest;
-import com.lernApp.lernapp.service.response.JwtResponse;
-import com.lernApp.lernapp.service.response.MessageResponse;
-import com.lernApp.lernapp.repository.RoleRepository;
-import com.lernApp.lernapp.repository.UserRepository;
-import com.lernApp.lernapp.security.jwt.JwtUtils;
-import com.lernApp.lernapp.security.services.UserDetailsImpl;
+import com.lernApp.LoginAPI.models.ERole;
+import com.lernApp.LoginAPI.models.Role;
+import com.lernApp.LoginAPI.models.User;
+import com.lernApp.LoginAPI.service.request.LoginRequest;
+import com.lernApp.LoginAPI.service.request.SignupRequest;
+import com.lernApp.LoginAPI.service.response.JwtResponse;
+import com.lernApp.LoginAPI.service.response.MessageResponse;
+import com.lernApp.LoginAPI.repository.RoleRepository;
+import com.lernApp.LoginAPI.repository.UserRepository;
+import com.lernApp.LoginAPI.security.jwt.JwtUtils;
+import com.lernApp.LoginAPI.security.services.UserDetailsImpl;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController

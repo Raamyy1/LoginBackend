@@ -1,6 +1,6 @@
-package com.lernApp.lernapp.security.jwt;
+package com.lernApp.LoginAPI.security.jwt;
 
-import com.lernApp.lernapp.security.services.UserDetailsImpl;
+import com.lernApp.LoginAPI.security.services.UserDetailsImpl;
 import io.jsonwebtoken.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

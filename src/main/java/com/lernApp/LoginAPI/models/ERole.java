@@ -1,4 +1,4 @@
-package com.lernApp.lernapp.models;
+package com.lernApp.LoginAPI.models;
 
 
 public enum ERole {

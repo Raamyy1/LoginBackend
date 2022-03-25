@@ -1,4 +1,4 @@
-package com.lernApp.lernapp.security.services;
+package com.lernApp.LoginAPI.security.services;
 
 
 import java.util.Collection;
@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
-import com.lernApp.lernapp.models.User;
+import com.lernApp.LoginAPI.models.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.userdetails.UserDetails;
 

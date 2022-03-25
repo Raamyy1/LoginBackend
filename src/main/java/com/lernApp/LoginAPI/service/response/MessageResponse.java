@@ -1,4 +1,4 @@
-package com.lernApp.lernapp.service.response;
+package com.lernApp.LoginAPI.service.response;
 
 public class MessageResponse {
     private String message;

@@ -1,4 +1,4 @@
-package com.lernApp.lernapp.security.jwt;
+package com.lernApp.LoginAPI.security.jwt;
 
 
 import java.io.IOException;

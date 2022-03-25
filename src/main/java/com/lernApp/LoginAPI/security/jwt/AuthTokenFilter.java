@@ -1,4 +1,4 @@
-package com.lernApp.lernapp.security.jwt;
+package com.lernApp.LoginAPI.security.jwt;
 
 
 import java.io.IOException;
@@ -18,7 +18,7 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.lernApp.lernapp.security.services.UserDetailsServiceImpl;
+import com.lernApp.LoginAPI.security.services.UserDetailsServiceImpl;
 
 public class AuthTokenFilter extends OncePerRequestFilter {
     @Autowired
